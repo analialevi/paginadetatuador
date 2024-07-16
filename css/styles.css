@@ -1,0 +1,349 @@
+body {
+    background-color: #26272b;
+}
+
+.navbar {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+/* Asegurar que la barra de navegación ocupe todo el ancho */
+.navbar {
+    width: 100%;
+}
+
+/* Mejorar la distribución de los ítems */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Asegurar que los ítems estén centrados verticalmente */
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los íconos de idioma */
+.lang-icon {
+    width: 20px; /* Tamaño ajustable según tu preferencia */
+    height: auto;
+    margin: 0 px; /* Espacio entre los íconos */
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+#largeCarousel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#largeCarousel .carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.logo-tattoo{
+    background-color: white;
+}
+
+.lang-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.carousel-caption button {
+    margin: 5px;
+}
+
+.img-carousel{
+    width: 250px;
+    height: 300px;
+}
+
+
+footer {
+    background-color: red;
+    color: #482a2a;
+}
+
+footer.bg-dark a {
+    color: #fff;
+}
+
+.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #CCCCCC;
+    transform: scale(1.2);
+}
+
+
+
+/* Contacto */
+.card-custom{
+
+    background-color: #cdd1df;
+}
+.form-wrapper {
+    max-width: 50%;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactForm {
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+color: #CCCCCC;
+
+}
+
+.form-group {
+    margin-bottom: 10px;
+    width: 100%;
+   
+}
+
+
+#successMessage {
+    display: none;
+}
+
+
+.titulo-formulario {
+    color: rgba(211, 75, 12, 0.959);
+    text-align: center;
+}
+
+#boton-enviar {
+    margin-top: 20px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+
+}
+.contact-container {
+    background-color: #1a1919; /* Gris oscuro */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%
+    
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    color: #CCCCCC;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+    padding: 5%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color:  rgba(211, 75, 12, 0.959);
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+/* Gallery */
+
+.titulo-gallery {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#container-video-1{
+    border-right: 1px solid beige;
+}
+
+
+#container-video-2{
+    border-left: 1px solid white;
+}
+
+
+.custom-video-size {
+    height: 450px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.custom-video-size video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mb-3{
+    color: white;
+}
+
+.texto-videos {
+    color: white;
+
+}
+
+
+/* Cards estilos */
+
+.card {
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* Estilos para las cards con efecto hover */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/*seccion you guys*/
+.custom-experience-card {
+    background-color: rgba(228, 104, 47, 0.959);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  }
+  .custom-experience-card .card-body {
+    padding: 20px; /* Aumentar el espacio interno */
+  }
+  .custom-experience-card .card-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .custom-experience-card .card-text {
+    color: #f0f0f0;
+  }
+  .card-text{color: white;
+  }
+  .custom-experience-card .customer-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    margin-right: 15px;
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio */
+  }
+  .you-card {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    background-color: #2e2e2e; /* Mantener los tonos oscuros */
+    color: #ffffff; /* Texto en blanco */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Mismos márgenes en todos los lados */
+}
+
+.you-image {
+    max-width: 85%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin: 20px; /* Mismos márgenes en todos los lados */
+}
+  
+    /* Estilos para alinear verticalmente el contenido */
+    .video-text-section {
+      display: flex;
+      align-items: center;
+  }
+  .text-section {
+      padding-left: 20px; /* Espacio entre el video y el texto */
+  }
+  
+  .titulo_principal_guys{
+    color: orangered;
+  }
+  
+  .main-content {
+    color: white;
+}
+.main-content h2 {
+    color: rgb(255, 102, 0);
+}

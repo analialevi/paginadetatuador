@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldito Duende</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo-tattoo">
+        MALDITO DUENDE TATTOO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./you.html">You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="#"><img src="../assets/flag_en.png" alt="Inglés" class="lang-icon"></a>
+            <a class="nav-link" href="#"><img src="../assets/flag_da.png" alt="Danés" class="lang-icon"></a>
+            <a class="nav-link" href="#"><img src="../assets/flag_it.png" alt="Italiano" class="lang-icon"></a>
+        </div>
+    </nav>
+    <main class="bg-dark">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div class="contact-container">
+                        <div class="row">
+                            <!-- Información de Contacto y Foto -->
+                            <div class="col-md-6 text-white">
+                                <h2 class="titulo-formulario ">Contact Information</h2>
+                                <p><strong>Telephone:</strong> +5493513101466</p>
+                                <p><strong>Email:</strong> entreangelez@gmail.com</p>
+                                <img src="../assets/034314C8-6D8B-45D1-8286-D59316DED792_Original.JPG" class="img-fluid" alt="Photo of the Tattoo Artist">
+                            </div>
+                            <!-- Formulario de Contacto -->
+                            <div class="col-md-6">
+                                <h2 class="titulo-formulario">Contact and Schedule Form</h2>
+                                <form id="contactForm" action="../php/send_mail.php" method="post">
+                                    <div class="form-group">
+                                        <label for="nombre">Name</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefono">Phone</label>
+                                        <input type="tel" class="form-control" id="telefono" name="telefono" required placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fecha">Appointment Date</label>
+                                        <input type="text" class="form-control" id="fecha" name="fecha" required placeholder="Select the date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tipo-consulta">Type of Inquiry</label>
+                                        <select class="form-control" id="tipo-consulta" name="tipo-consulta" required>
+                                            <option value="">Select an option</option>
+                                            <option value="consulta">Inquiry</option>
+                                            <option value="sugerencia">Suggestion</option>
+                                            <option value="turno">Appointment</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mensaje">Message</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foto-referencia">Reference Photo</label>
+                                        <input type="file" class="form-control-file" id="foto-referencia" name="foto-referencia">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">About Us</h5>
+                    <p class="text-light">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nisi a nihil ab repudiandae, deleniti officia. Facere aspernatur laborum et, voluptates quod dolores magnam quas consectetur necessitatibus voluptatem consequuntur error..
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">About Me</a></li>
+                        <li><a href="#" class="text-light">You</a></li>
+                        <li><a href="#" class="text-light">Gallery</a></li>
+                        <li><a href="#" class="text-light">Travelling</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <h5 class="text-uppercase text-light">Social Media</h5>
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="tiktok" href="#"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
